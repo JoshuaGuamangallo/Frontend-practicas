@@ -1,0 +1,12 @@
+.background {
+  background-image: url("../../assets/img/font-login.jpg");
+  min-height: 100%;
+}
+
+.login-form {
+  width: 250px;
+  margin-left: 37%;
+  border: 1px solid black;
+
+}
+

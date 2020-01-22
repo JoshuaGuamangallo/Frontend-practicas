@@ -1,0 +1,42 @@
+header {
+  width: 100%;
+  padding-bottom: -60px;
+  border-bottom: 6px solid #081451;
+}
+
+header img {
+  float: left;
+  width: 130px;
+  margin: 10px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.title {
+  float: right;
+  color: #081451;
+  font-size: 40px;
+  font-family: berlin sans fb;
+  margin: auto;
+  margin-top: 20px;
+  margin-right: 30px;
+  text-indent: 30pt;
+}
+
+.blue-background {
+  border: 6px solid #081451;
+  background-color: #081451;
+  border-radius: 0px;
+}
+
+.white {
+  color: white;
+}
+
+.header {
+  background-image: url("../../assets/img/nav.jpeg");
+  background-repeat: repeat-x;
+}

@@ -1,0 +1,30 @@
+<div class="container-fluid background">
+  <div class="login-form">
+    <p class="text-center" style="margin-top: 17px;">
+      <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>
+    </p>
+    <h4 class="text-center all-tittles" style="margin-bottom: 30px;">inicia sesión con tu cuenta</h4>
+    <mat-dialog-content>
+      <mat-form-field>
+        <input matInput type="text" placeholder="nombre">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="contraseña">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Tipo de Usuario</mat-label>
+        <mat-select required>
+          <mat-option *ngFor="let option of options" [value]="option.value">
+            {{option.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-raised-button mat-dialog-close>Cancel</button>
+      <button mat-raised-button>Login</button>
+    </mat-dialog-actions>
+
+  </div>
+
+</div>

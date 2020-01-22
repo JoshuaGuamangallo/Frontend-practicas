@@ -1,0 +1,80 @@
+<header class="header">
+  <div class="container ">
+    <img src="assets/img/logo.png"/>
+    <b class="title"> Universidad Iberoamericana del Ecuador</b>
+    <br>
+  </div>
+  <div class="white"></div>
+
+</header>
+<nav class="navbar navbar-default blue-background">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse  white collapse container">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="inicio">INICIO</button>
+
+          <!-- detalle  del menu -->
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="planificacion">PLANIFICACIÓN</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #planificacion="matMenu">
+            <button mat-menu-item>Estudiantes</button>
+            <button mat-menu-item>Solicitud</button>
+            <button mat-menu-item>Documentación</button>
+            <button mat-menu-item>Convenios</button>
+            <button mat-menu-item>Entidad</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="ejecucion">EJECUCIÓN</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #ejecucion="matMenu">
+            <button mat-menu-item>Tutor</button>
+            <button mat-menu-item>Estudiante</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="cierre">CIERRE</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #cierre="matMenu">
+            <button mat-menu-item>Seguimiento y control</button>
+            <button mat-menu-item>Calificaciones</button>
+            <button mat-menu-item [matMenuTriggerFor]="certificado">Certificado</button>
+          </mat-menu>
+          <!-- detalle  del submenu -->
+          <mat-menu #certificado="matMenu">
+            <button mat-menu-item>Unibe</button>
+            <button mat-menu-item>Entidad</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button>CONTACTOS</button>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
